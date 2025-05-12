@@ -70,6 +70,32 @@ namespace PharmacyConsoleApp
                 {
                     Console.WriteLine($"ID: {medicine.MedicineId}, Name: {medicine.MedicineName}, Manufacturer: {medicine.Manufacturer?.ManufacturerName}");
                 }
+
+                // 6. Step 8  Additional Tasks (Optional for Advanced Practice)
+                //filter
+                var filteredMedicines = context.MedicineInformations
+                    .Where(m => m.ExpirationDate.Contains("3 years"))
+                    .ToList();
+                Console.WriteLine("\nMedicines with 3-year expiration:");
+                foreach (var medicine in filteredMedicines)
+                {
+                    Console.WriteLine($"ID: {medicine.MedicineId}, Name: {medicine.MedicineName}");
+                }
+                // valid
+                static bool IsValidActiveIngredients(string ingredients)
+                {
+                    if (string.IsNullOrEmpty(ingredients) || ingredients.Length <= 10)
+                        return false;
+
+                    if (ingredients.Any(c => "#@&()".Contains(c)))
+                        return false;
+
+                    var words = ingredients.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                    return words.All(word => char.IsUpper(word[0]) || char.IsDigit(word[0]));
+                }
+
+                Console.WriteLine($"Is valid? {IsValidActiveIngredients("Acetylsalicylic Acid")}");
+                Console.WriteLine($"Is valid? {IsValidActiveIngredients("acetylsalicylic acid")}");
             }
         }
     }

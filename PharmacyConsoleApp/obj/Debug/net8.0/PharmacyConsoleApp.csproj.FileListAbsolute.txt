@@ -135,3 +135,4 @@ E:\SU24\PRN222\PharmacyConsoleApp\PharmacyConsoleApp\bin\Debug\net8.0\Microsoft.
 E:\SU24\PRN222\PharmacyConsoleApp\PharmacyConsoleApp\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\SU24\PRN222\PharmacyConsoleApp\PharmacyConsoleApp\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 E:\SU24\PRN222\PharmacyConsoleApp\PharmacyConsoleApp\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\SU24\PRN222\PharmacyConsoleApp\PharmacyConsoleApp\obj\Debug\net8.0\PharmacyConsoleApp.sourcelink.json
