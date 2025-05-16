@@ -1,0 +1,15 @@
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\bin\Debug\net8.0\PharmacyWebApp.Services.deps.json
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\bin\Debug\net8.0\PharmacyWebApp.Services.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\bin\Debug\net8.0\PharmacyWebApp.Services.pdb
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\bin\Debug\net8.0\PharmacyWebApp.Data.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\bin\Debug\net8.0\PharmacyWebApp.Data.pdb
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.csproj.AssemblyReference.cache
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.AssemblyInfoInputs.cache
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.AssemblyInfo.cs
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.csproj.CoreCompileInputs.cache
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\Pharmacy.231D23EC.Up2Date
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\refint\PharmacyWebApp.Services.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.pdb
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\ref\PharmacyWebApp.Services.dll
