@@ -13,3 +13,4 @@ E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\Phar
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\refint\PharmacyWebApp.Services.dll
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.pdb
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\ref\PharmacyWebApp.Services.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp.Services\obj\Debug\net8.0\PharmacyWebApp.Services.sourcelink.json

@@ -6,33 +6,50 @@
  ViewData["Title"] = "Medicines";
 }
 <h2>Medicine List</h2>
+@if (HttpContext.Session.GetString("Role") == "2")
+{
+    <a asp-page="Add" class="btn btn-success mb-3">
+        Add New Medicine
+    </a>
+}
 <table class="table">
- <thead>
- <tr>
- <th>Medicine ID</th>
- <th>Name</th>
- <th>Active Ingredients</th>
- <th>Expiration Date</th>
- <th>Dosage Form</th>
- <th>Warnings</th>
- <th>Manufacturer</th>
- </tr>
- </thead>
- <tbody>
- @foreach (var medicine in Model.Medicines)
- {
- <tr>
- <td>@medicine.MedicineId</td>
- <td>@medicine.MedicineName</td>
- <td>@medicine.ActiveIngredients</td>
- <td>@medicine.ExpirationDate</td>
- <td>@medicine.DosageForm</td>
- <td>@medicine.WarningsAndPrecautions</td>
- <td>@medicine.Manufacturer?.ManufacturerName</td>
- </tr>
- }
- </tbody>
+    <thead>
+        <tr>
+            <th>Medicine ID</th>
+            <th>Name</th>
+            <th>Active Ingredients</th>
+            <th>Expiration Date</th>
+            <th>Dosage Form</th>
+            <th>Warnings</th>
+            <th>Manufacturer</th>
+            @if (HttpContext.Session.GetString("Role") == "2")
+            {
+                <th>Actions</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var medicine in Model.Medicines)
+        {
+            <tr>
+                <td>@medicine.MedicineId</td>
+                <td>@medicine.MedicineName</td>
+                <td>@medicine.ActiveIngredients</td>
+                <td>@medicine.ExpirationDate</td>
+                <td>@medicine.DosageForm</td>
+                <td>@medicine.WarningsAndPrecautions</td>
+                <td>@medicine.Manufacturer?.ManufacturerName</td>
+                @if (HttpContext.Session.GetString("Role") == "2"
+                            )
+                {
+                    <td>
+                        <a asp-page="Update" asp-route-id="@medicine.MedicineId" class="btn btn-primary btn-sm">Update</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
 </table>
 <div>
- @Html.PagedListPager(Model.MedicinesPaged, page => Url.Page("/Medicines/Index", new { page }))
+    @Html.PagedListPager(Model.MedicinesPaged, pageNumber => Url.Page("/Medicines/Index", new { pageNumber }))
 </div>

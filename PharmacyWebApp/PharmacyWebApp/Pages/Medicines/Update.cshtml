@@ -1,0 +1,55 @@
+﻿@page "{id}"
+@model PharmacyWebApp.Pages.Medicines.UpdateModel
+
+@{
+    ViewData["Title"] = "Update Medicine";
+}
+
+<h2>Update Medicine</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Medicine.MedicineId" />
+
+    <div class="form-group">
+        <label asp-for="Medicine.MedicineName"></label>
+        <input asp-for="Medicine.MedicineName" class="form-control" />
+        <span asp-validation-for="Medicine.MedicineName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Medicine.ActiveIngredients"></label>
+        <input asp-for="Medicine.ActiveIngredients" class="form-control" />
+        <span asp-validation-for="Medicine.ActiveIngredients" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Medicine.ExpirationDate"></label>
+        <input asp-for="Medicine.ExpirationDate" class="form-control" />
+        <span asp-validation-for="Medicine.ExpirationDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Medicine.DosageForm"></label>
+        <input asp-for="Medicine.DosageForm" class="form-control" />
+        <span asp-validation-for="Medicine.DosageForm" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Medicine.WarningsAndPrecautions"></label>
+        <input asp-for="Medicine.WarningsAndPrecautions" class="form-control" />
+        <span asp-validation-for="Medicine.WarningsAndPrecautions" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Medicine.ManufacturerId"></label>
+        <select asp-for="Medicine.ManufacturerId" asp-items="@(new SelectList(Model.Manufacturers, "ManufacturerId", "ManufacturerName"))" class="form-control"></select>
+        <span asp-validation-for="Medicine.ManufacturerId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

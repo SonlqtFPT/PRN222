@@ -7,5 +7,10 @@ namespace PharmacyWebApp.Data.Repositories
     {
         Task<List<MedicineInformation>> GetAllWithManufacturerAsync(int pageNumber, int pageSize);
         Task<int> GetTotalCountAsync();
+
+        Task AddAsync(MedicineInformation medicine);
+        Task<MedicineInformation> GetByIdAsync(string medicineId);
+        Task UpdateAsync(MedicineInformation medicine);
+        Task<List<Manufacturer>> GetAllManufacturersAsync();
     }
 }

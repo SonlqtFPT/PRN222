@@ -144,3 +144,4 @@ E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp\obj\Debug\net8.0\refint\Pharma
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp\obj\Debug\net8.0\PharmacyWebApp.pdb
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp\obj\Debug\net8.0\PharmacyWebApp.genruntimeconfig.cache
 E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp\obj\Debug\net8.0\ref\PharmacyWebApp.dll
+E:\SU25\PRN222\Lab2\PharmacyWebApp\PharmacyWebApp\obj\Debug\net8.0\PharmacyWebApp.sourcelink.json

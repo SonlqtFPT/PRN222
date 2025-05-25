@@ -7,5 +7,12 @@ namespace PharmacyWebApp.Services.Services
     {
         Task<List<MedicineInformation>> GetMedicinesAsync(int pageNumber, int pageSize);
         Task<int> GetTotalMedicineCountAsync();
+
+        Task AddMedicineAsync(MedicineInformation medicine);
+        Task<MedicineInformation> GetMedicineByIdAsync(string medicineId)
+         ;
+        Task UpdateMedicineAsync(MedicineInformation medicine);
+        Task<List<Manufacturer>> GetManufacturersAsync();
+        bool IsValidActiveIngredients(string ingredients);
     }
 }

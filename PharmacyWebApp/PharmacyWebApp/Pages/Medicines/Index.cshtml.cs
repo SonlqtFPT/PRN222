@@ -19,13 +19,13 @@ namespace PharmacyWebApp.Pages.Medicines
             get; set;
         }
         public List<MedicineInformation> Medicines { get; set; }
-        public async Task OnGetAsync(int? page)
+        public async Task OnGetAsync(int? pageNumber)
         {
-            int pageNumber = page ?? 1;
+            int page = pageNumber ?? 1;
             int pageSize = 3;
             Medicines = await _medicineService.GetMedicinesAsync(
-           pageNumber, pageSize);
-            MedicinesPaged = new StaticPagedList<MedicineInformation>(Medicines, pageNumber, pageSize, await _medicineService.GetTotalMedicineCountAsync());
+           page, pageSize);
+            MedicinesPaged = new StaticPagedList<MedicineInformation>(Medicines, page, pageSize, await _medicineService.GetTotalMedicineCountAsync());
         }
     }
 }

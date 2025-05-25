@@ -32,8 +32,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/SU25/PRN222/Lab2/PharmacyWebApp/PharmacyWebApp/Pages/Medicines/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/SU25/PRN222/Lab2/PharmacyWebApp/PharmacyWebApp/Pages/Medicines/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/SU25/PRN222/Lab2/PharmacyWebApp/PharmacyWebApp/Pages/Medicines/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/SU25/PRN222/Lab2/PharmacyWebApp/PharmacyWebApp/Pages/Privacy.cshtml]

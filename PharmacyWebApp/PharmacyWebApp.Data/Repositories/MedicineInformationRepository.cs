@@ -25,5 +25,25 @@ namespace PharmacyWebApp.Data.Repositories
             return await _context.MedicineInformations.CountAsync
            ();
         }
+
+        public async Task AddAsync(MedicineInformation medicine)
+        {
+            _context.MedicineInformations.Add(medicine);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<MedicineInformation> GetByIdAsync(string medicineId)
+        {
+            return await _context.MedicineInformations.Include(m => m.Manufacturer).FirstOrDefaultAsync(m => m.MedicineId == medicineId);
+        }	
+
+        public async Task UpdateAsync(MedicineInformation medicine)
+        {
+            _context.MedicineInformations.Update(medicine);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<List<Manufacturer>> GetAllManufacturersAsync()
+        {
+            return await _context.Manufacturers.ToListAsync();
+        }
     }
 }
