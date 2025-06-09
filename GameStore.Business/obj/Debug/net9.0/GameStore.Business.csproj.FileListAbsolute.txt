@@ -1,0 +1,15 @@
+E:\SU25\PRN222\Lab3\GameStore.Business\bin\Debug\net9.0\GameStore.Business.deps.json
+E:\SU25\PRN222\Lab3\GameStore.Business\bin\Debug\net9.0\GameStore.Business.dll
+E:\SU25\PRN222\Lab3\GameStore.Business\bin\Debug\net9.0\GameStore.Business.pdb
+E:\SU25\PRN222\Lab3\GameStore.Business\bin\Debug\net9.0\GameStore.Data.dll
+E:\SU25\PRN222\Lab3\GameStore.Business\bin\Debug\net9.0\GameStore.Data.pdb
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.csproj.AssemblyReference.cache
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.AssemblyInfoInputs.cache
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.AssemblyInfo.cs
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.csproj.CoreCompileInputs.cache
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStor.8B6DBF1E.Up2Date
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.dll
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\refint\GameStore.Business.dll
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\GameStore.Business.pdb
+E:\SU25\PRN222\Lab3\GameStore.Business\obj\Debug\net9.0\ref\GameStore.Business.dll

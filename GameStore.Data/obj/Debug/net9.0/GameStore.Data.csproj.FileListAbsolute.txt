@@ -1,0 +1,14 @@
+E:\SU25\PRN222\Lab3\GameStore.Data\bin\Debug\net9.0\GameStore.Data.deps.json
+E:\SU25\PRN222\Lab3\GameStore.Data\bin\Debug\net9.0\GameStore.Data.runtimeconfig.json
+E:\SU25\PRN222\Lab3\GameStore.Data\bin\Debug\net9.0\GameStore.Data.dll
+E:\SU25\PRN222\Lab3\GameStore.Data\bin\Debug\net9.0\GameStore.Data.pdb
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.csproj.AssemblyReference.cache
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.AssemblyInfoInputs.cache
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.AssemblyInfo.cs
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.csproj.CoreCompileInputs.cache
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.dll
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\refint\GameStore.Data.dll
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.pdb
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\GameStore.Data.genruntimeconfig.cache
+E:\SU25\PRN222\Lab3\GameStore.Data\obj\Debug\net9.0\ref\GameStore.Data.dll

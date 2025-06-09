@@ -1,0 +1,82 @@
+@page
+@model GameStore.Web.Pages.Games.IndexModel
+@using Microsoft.AspNetCore.Authorization
+@{
+    ViewData["Title"] = "Games List";
+    bool isAdminOrManager = User.IsInRole("Admin") || User.IsInRole("Manager");
+}
+
+<div class="container mt-4">
+    <h1 class="text-primary">Game Catalog</h1>
+    <p class="text-muted">Browse all available games.</p>
+
+    <p>
+        <a asp-page="/Categories/Index" class="btn btn-outline-secondary">View Categories</a>
+    </p>
+
+    @if (isAdminOrManager)
+    {
+        <p>
+            <a asp-page="Create" class="btn btn-success">Create New Game</a>
+        </p>
+    }
+
+    <table class="table table-striped table-hover mt-3">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Game[0].Title)</th>
+                <th>@Html.DisplayNameFor(model => model.Game[0].Price)</th>
+                <th>@Html.DisplayNameFor(model => model.Game[0].ReleaseDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Game[0].Category)</th>
+                @if (isAdminOrManager)
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Game)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ReleaseDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Category.Name)</td>
+                    @if (isAdminOrManager)
+                    {
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                            <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                            <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            @if (Model.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-page="Index" asp-route-pageNumber="@(Model.PageNumber - 1)">Previous</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link" asp-page="Index" asp-route-pageNumber="@i">@i</a>
+                </li>
+            }
+
+            @if (Model.PageNumber < Model.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-page="Index" asp-route-pageNumber="@(Model.PageNumber + 1)">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

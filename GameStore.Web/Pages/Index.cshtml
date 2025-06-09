@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GameStore Home";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4 fw-bold text-primary">Welcome to GameStore</h1>
+    <p class="lead text-muted">Discover, explore, and start building your gaming collection today.</p>
+
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="mt-4">
+            <a class="btn btn-lg btn-outline-primary" href="/Login">Login</a>
+        </div>
+    }
+    else
+    {
+        <div class="mt-4 d-flex justify-content-center gap-3">
+            <a class="btn btn-lg btn-primary px-5" href="/Games">Browse Games</a>
+            <a class="btn btn-lg btn-secondary px-5" href="/Categories">View Categories</a>
+        </div>
+    }
+
+    <div class="mt-5">
+        <img src="https://img.freepik.com/free-psd/video-game-store-banner-3d-illustration_1419-2379.jpg?t=st=1749444039~exp=1749447639~hmac=55b3fe56fce800eb895390c07c06b19ac35ab3e15a33c7b2e9df2fb24b2cc4df&w=1380"
+             alt="Game Store Banner"
+             class="img-fluid rounded shadow"
+             style="max-height: 400px; width: 100%; object-fit: cover;" />
+    </div>
+</div>
